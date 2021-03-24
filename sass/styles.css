@@ -1,0 +1,15 @@
+@import "fonts/fonts.css";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.registration-container {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=styles.css.map */
