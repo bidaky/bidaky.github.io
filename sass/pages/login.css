@@ -24,6 +24,17 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.login-title {
+  font-family: Teko, sans-serif;
+  font-size: 64px;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: bold;
+  color: #9d959d;
+  margin: -10px 0 10px 0;
+  text-transform: uppercase;
+}
+
 .left-column {
   height: 406px;
   width: 45%;
@@ -56,7 +67,6 @@ body {
   display: block;
   padding: 0 10px;
   line-height: 40px;
-  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: #736f6f;
   background: none;
@@ -70,8 +80,9 @@ body {
   position: absolute;
   left: 13px;
   color: #9d959d;
-  font-size: 20px;
-  font-weight: 300;
+  font-family: Poppins-Medium, sans-serif;
+  font-size: 18px;
+  font-weight: 200;
   transform: translateY(-35px);
   transition: all 0.2s ease;
 }
@@ -84,8 +95,8 @@ body {
 .wrap-input input:focus + label, .wrap-input input:valid + label {
   transform: translateY(-60px);
   margin-left: -14px;
-  font-size: 17px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 200;
   outline: 0;
   color: #faba24;
 }
@@ -95,14 +106,14 @@ body {
   width: 200px;
   height: 45px;
   line-height: 45px;
-  border-radius: 45px;
+  border-radius: 5px;
   border-color: transparent;
-  font-family: "Montserrat", sans-serif;
-  font-size: 11px;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 14px;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 3px;
-  font-weight: 600;
+  letter-spacing: 2px;
+  font-weight: 300;
   color: #524f4e;
   background: white;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
@@ -118,7 +129,7 @@ body {
 }
 
 .container {
-  padding-top: 50px;
+  padding-top: 17px;
   padding-bottom: 40px;
   width: 100%;
   text-align: center;
@@ -149,7 +160,8 @@ body {
 }
 
 .sign-up {
-  padding-top: 13px;
+  color: #524f4e;
+  padding-top: 12px;
 }
 
 header {
