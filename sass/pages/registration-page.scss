@@ -16,12 +16,17 @@ body {
   margin: 119px auto 19px auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   body {
+    background: none;
     background-size: cover;
   }
   .reg-field input{
   width: 94%;}
+  .registration-container{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 105px auto 19px auto;
+  }
 
 }
 .sign {
