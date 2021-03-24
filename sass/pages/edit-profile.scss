@@ -2,62 +2,32 @@
   margin-left: 10px;
 }
 
-* {
-  box-sizing: content-box;
-}
+//* {
+//  box-sizing: content-box;
+//}
 
 body {
   text-align: center;
   display: flex;
   justify-content: center;
   font-family: "Poppins-Medium", sans-serif;
-  background: url("images/background.png"), -webkit-linear-gradient(bottom, #4eb78b, #fff);
-}
-
-header {
-  height: 100px;
-  background: #4eb78b;
-  width: 100%;
-  z-index: 12;
-  position: fixed;
-}
-
-.logo {
-  width: 30%;
-  float: left;
-  line-height: 100px;
-}
-
-.logo a {
-  text-decoration: none;
-  font-size: 30px;
-  font-family: "Teko", sans-serif;
-  color: #fff;
-  letter-spacing: 5px;
-}
-
-nav {
-  float: right;
-  line-height: 100px;
-}
-
-nav a {
-  text-decoration: none;
-  font-family: "Teko", sans-serif;
-  letter-spacing: 4px;
-  font-size: 20px;
-  margin: 0 18px;
-  color: #ffffff;
+  background: url("../../images/background.png"), -webkit-linear-gradient(bottom, #4eb78b, #fff);
 }
 
 .registration-container {
   width: 342px;
   background: #ffffff;
   border-radius: 5px;
-  padding: 30px 35px 0px 35px;
+  padding: 30px 35px 0 35px;
   margin: 119px auto 19px auto;
 }
-
+@media (max-width: 992px) {
+  .registration-container{
+    width: 360px;
+    margin: 100px auto 30px auto;
+    padding: 30px 25px 0 35px;
+  }
+}
 .sign {
   font-size: 29px;
   font-weight: 600;
