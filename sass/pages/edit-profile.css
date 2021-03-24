@@ -18,13 +18,6 @@ body {
   margin: 119px auto 19px auto;
 }
 
-@media (max-width: 992px) {
-  .registration-container {
-    width: 360px;
-    margin: 100px auto 30px auto;
-    padding: 30px 25px 0 35px;
-  }
-}
 .sign {
   font-size: 29px;
   font-weight: 600;
@@ -80,6 +73,22 @@ body {
   margin-left: 10px;
 }
 
+@media (max-width: 992px) {
+  .header-nav nav .logo {
+    margin: 0;
+    text-align: left;
+  }
+
+  .registration-container {
+    width: 360px;
+    margin: 100px auto 30px auto;
+    padding: 30px 25px 0 35px;
+  }
+
+  .reg-field input {
+    width: 91%;
+  }
+}
 /*# sourceMappingURL=edit-profile.css.map */
 
 /*# sourceMappingURL=edit-profile.css.map */

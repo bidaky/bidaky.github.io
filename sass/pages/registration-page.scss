@@ -18,8 +18,11 @@ body {
 
 @media (max-width: 768px) {
   body {
-    min-height: 100vh;
+    background-size: cover;
   }
+  .reg-field input{
+  width: 94%;}
+
 }
 .sign {
   text-align: center;
