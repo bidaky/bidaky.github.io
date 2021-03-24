@@ -12,7 +12,6 @@
 
 * {
   margin: auto;
-  box-sizing: border-box;
 }
 
 body {
@@ -20,42 +19,6 @@ body {
   font-family: Poppins-Medium, sans-serif;
   letter-spacing: 1px;
   background: #e3e9ff;
-}
-
-header {
-  height: 100px;
-  background: #4eb78b;
-  width: 100%;
-  z-index: 12;
-  position: fixed;
-}
-
-.logo {
-  width: 30%;
-  float: left;
-  line-height: 100px;
-}
-
-.logo a {
-  text-decoration: none;
-  font-size: 30px;
-  font-family: "Teko", sans-serif;
-  color: #fff;
-  letter-spacing: 5px;
-}
-
-nav {
-  float: right;
-  line-height: 100px;
-}
-
-nav a {
-  text-decoration: none;
-  font-family: "Teko", sans-serif;
-  letter-spacing: 4px;
-  font-size: 20px;
-  margin: 0 18px;
-  color: #ffffff;
 }
 
 .profile-container {
@@ -101,7 +64,29 @@ nav a {
   height: 292px;
   background: #ffffff;
 }
+@media (max-width: 992px) {
+  .profile-right-column {
+    width: 60%;
+  }
+}
 
+@media (max-width: 768px) {
+  .profile-container {
+    display: block;
+    position: relative;
+    height: auto;
+  }
+
+  .profile-left-column {
+    width: 100%;
+    padding-top: 17%;
+    padding-bottom: 6%;
+  }
+
+  .profile-right-column {
+    width: 100%;
+  }
+}
 .cam {
   position: absolute;
 }

@@ -10,6 +10,7 @@
 body {
   text-align: center;
 }
+
 .form-container {
   position: absolute;
   width: 75%;
@@ -54,7 +55,7 @@ body {
 }
 @media (max-width: 992px) {
   .form-container {
-    width: 80%;
+    width: 78%;
     box-shadow: none;
     top: 55%;
     .left-column {
@@ -203,42 +204,6 @@ body {
 .sign-up {
   color: #524f4e;
   padding-top: 12px;
-}
-
-header {
-  height: 100px;
-  background: #4eb78b;
-  width: 100%;
-  z-index: 12;
-  position: fixed;
-}
-
-.logo {
-  width: 30%;
-  float: left;
-  line-height: 100px;
-}
-
-.logo a {
-  text-decoration: none;
-  font-size: 30px;
-  font-family: "Teko", sans-serif;
-  color: #fff;
-  letter-spacing: 5px;
-}
-
-nav {
-  float: right;
-  line-height: 100px;
-}
-
-nav a {
-  text-decoration: none;
-  font-family: "Teko", sans-serif;
-  letter-spacing: 4px;
-  font-size: 20px;
-  margin: 0 18px;
-  color: #ffffff;
 }
 
 /*# sourceMappingURL=login.css.map */
