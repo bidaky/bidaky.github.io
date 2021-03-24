@@ -5,7 +5,7 @@
 body {
   font-family: "Poppins-Medium", sans-serif;
   letter-spacing: 1px;
-  background: url("../../images/background.png"), -webkit-linear-gradient(bottom, #4eb78b, #fff);
+  background-color: #e3e9ff;
 }
 
 .registration-container {
