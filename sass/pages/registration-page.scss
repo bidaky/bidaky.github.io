@@ -3,10 +3,6 @@
 }
 
 body {
-  //text-align: center;
-  //display: flex;
-  //justify-content: center;
-  //min-height: 100vh;
   font-family: "Poppins-Medium", sans-serif;
   letter-spacing: 1px;
   background: url("../../images/background.png"), -webkit-linear-gradient(bottom, #4eb78b, #fff);
@@ -20,7 +16,13 @@ body {
   margin: 119px auto 19px auto;
 }
 
+@media (max-width: 768px) {
+  body {
+    min-height: 100vh;
+  }
+}
 .sign {
+  text-align: center;
   font-size: 29px;
   font-weight: 600;
 }
