@@ -3,9 +3,7 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  outline: none;
+  box-sizing: content-box;
 }
 
 body {
@@ -13,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
   font-family: "Poppins-Medium", sans-serif;
-  background: url("../../images/background.png"), -webkit-linear-gradient(bottom, #4eb78b, #fff);
+  background: url("images/background.png"), -webkit-linear-gradient(bottom, #4eb78b, #fff);
 }
 
 header {
@@ -114,5 +112,7 @@ nav a {
 .submit {
   margin-left: 10px;
 }
+
+/*# sourceMappingURL=edit-profile.css.map */
 
 /*# sourceMappingURL=edit-profile.css.map */
