@@ -2,11 +2,6 @@
   box-sizing: border-box;
 }
 
-* {
-  margin: auto;
-  padding: 0;
-}
-
 body {
   text-align: center;
 }
@@ -161,7 +156,7 @@ body {
   letter-spacing: 2px;
   font-weight: 300;
   color: #524f4e;
-  background: white;
+  background: #ffff;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
   margin: auto;

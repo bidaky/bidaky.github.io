@@ -1,7 +1,3 @@
-.ml-1 {
-  margin-left: 10px;
-}
-
 body {
   text-align: center;
   display: flex;
@@ -12,7 +8,7 @@ body {
 
 .registration-container {
   width: 342px;
-  background: #ffffff;
+  background: #ffff;
   border-radius: 5px;
   padding: 30px 35px 0 35px;
   margin: 119px auto 19px auto;
@@ -56,7 +52,7 @@ body {
   border: none;
   border-radius: 5px;
   background: #faba24;
-  color: #ffffff;
+  color: #ffff;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;

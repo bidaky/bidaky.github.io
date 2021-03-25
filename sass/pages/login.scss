@@ -1,12 +1,7 @@
+@import "../utilities/colors";
 * {
   box-sizing: border-box;
 }
-
-* {
-  margin: auto;
-  padding: 0;
-}
-
 body {
   text-align: center;
 }
@@ -29,7 +24,7 @@ body {
   letter-spacing: 2px;
   text-align: center;
   font-weight: bold;
-  color: #9d959d;
+  color: $form-background;
   margin: -10px 0 10px 0;
   text-transform: uppercase;
 }
@@ -42,7 +37,7 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 30px;
-  background: #e3e9ff;
+  background: $background-color
 }
 
 .right-column {
@@ -110,10 +105,10 @@ body {
   padding: 0 10px;
   line-height: 40px;
   font-size: 16px;
-  color: #736f6f;
+  color: $input-color;
   background: none;
   border-width: 0;
-  border-bottom: 2px solid #4a90e2;
+  border-bottom: 2px solid $blue;
   transition: all 0.2s ease;
   margin: auto;
 }
@@ -121,7 +116,7 @@ body {
 .wrap-input label {
   position: absolute;
   left: 13px;
-  color: #9d959d;
+  color: $form-background;
   font-family: Poppins-Medium,sans-serif;
   font-size: 18px;
   font-weight: 200;
@@ -131,7 +126,7 @@ body {
 
 .wrap-input input:focus {
   outline: 0;
-  border-color: #faba24;
+  border-color: $light-orange;
 }
 
 .wrap-input input:focus + label, .wrap-input input:valid + label {
@@ -140,7 +135,7 @@ body {
   font-size: 16px;
   font-weight: 200;
   outline: 0;
-  color: #faba24;
+  color: $light-orange;
 }
 
 .floating-button {
@@ -156,15 +151,15 @@ body {
   text-align: center;
   letter-spacing: 2px;
   font-weight: 300;
-  color: #524f4e;
-  background: white;
+  color: $grey-button;
+  background: $white;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
   margin: auto;
 }
 
 .floating-button:hover {
-  background: #5cbe6f;
+  background: $green-button-hover;
   box-shadow: 0 15px 20px rgba(46, 229, 157, 0.4);
   color: white;
   transform: translateY(-7px);
@@ -202,7 +197,7 @@ body {
 }
 
 .sign-up {
-  color: #524f4e;
+  color: $grey-button;
   padding-top: 12px;
 }
 

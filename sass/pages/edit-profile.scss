@@ -1,23 +1,19 @@
-.ml-1 {
-  margin-left: 10px;
-}
-
-//* {
-//  box-sizing: content-box;
+//.ml-1 {
+//  margin-left: 10px;
 //}
-
+@import "../utilities/colors";
 body {
   text-align: center;
   display: flex;
   justify-content: center;
   font-family: "Poppins-Medium", sans-serif;
-  background-color: #e3e9ff;
+  background-color: $background-color;
   //background: url("../../images/background.png"), -webkit-linear-gradient(bottom, #4eb78b, #fff);
 }
 
 .registration-container {
   width: 342px;
-  background: #ffffff;
+  background: $white;
   border-radius: 5px;
   padding: 30px 35px 0 35px;
   margin: 119px auto 19px auto;
@@ -60,8 +56,8 @@ body {
   margin-top: -10px;
   border: none;
   border-radius: 5px;
-  background: #faba24;
-  color: #ffffff;
+  background: $light-orange;
+  color: $white;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -71,7 +67,7 @@ body {
 }
 
 .reg-field button:hover {
-  background: #000;
+  background: $black
 }
 
 .submit {
