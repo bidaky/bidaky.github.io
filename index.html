@@ -1,34 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
+    <link rel="stylesheet" href="sass/pages/login.css">
     <link rel="stylesheet" href="sass/styles.css">
-    <link rel="stylesheet" href="sass/pages/index.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
-<header>
-    <div class="main-wrapper">
-        <div class="logo">
-            <a href="#">ONLINE-WALLET</a>
-        </div>
-        <nav>
-            <a href="#">ABOUT</a>
-            <a href="#">LOGIN</a>
-            <a href="login.html">SIGN UP</a>
-        </nav>
-    </div>
-</header>
 <body>
-    <div class="box-area">
-
-        <div class="banner-area"></div>
-        <div class="content-area">
-            <div class="main-wrapper">
-                <h1>Content area</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid animi cum delectus deserunt magnam optio, quam quia quos! Aliquam, amet commodi consequatur culpa delectus deleniti dicta dolorem, itaque maxime nisi nobis, pariatur rem sapiente sed vel! Delectus, laborum libero quam quas quis quod sit vero. Ab animi, aperiam consectetur debitis deleniti dolorum eos explicabo harum illo iste modi molestias nam necessitatibus nihil nisi saepe, sequi similique suscipit. Accusamus aspernatur dolore inventore molestiae, officia optio praesentium provident! Adipisci aspernatur atque aut dicta modi odit sapiente tempora ullam ut vel, vero voluptas voluptate! Adipisci ea, eveniet inventore ipsum mollitia sapiente sint temporibus?</p>
-            </div>
-
+<div class="header-nav">
+    <nav >
+        <div class="logo">
+            ONLINE-WALLET
         </div>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input class="display-none" type="checkbox" id="btn">
+        <ul>
+            <li>
+            <a href="#">ABOUT</a>
+            </li>
+            <li><a href="registration-page.html">SIGN UP</a></li>
+
+        </ul>
+    </nav>
+</div>
+<main>
+    <div class="form-container">
+        <form class="left-column">
+            <p class="login-title">Welcome</p>
+            <div class="wrap-input validate-input" data-validate = "Valid email is: a@b.c">
+                <input  class="input-form" id="email" required autocomplete="off" > <label for="email">Email</label>
+            </div>
+            <div class="wrap-input validate-input" data-validate="Enter password">
+                <input class="input-form" id="password" required autocomplete="off" type="password"  ><label for="password">Password</label>
+            </div>
+            <button class="floating-button" >
+                Login
+            </button>
+
+            <div class="container">
+                <a href="#">
+                    Forgot your password?
+                </a>
+                <div class="sign-up"> Don’t have an account?
+                <a href="registration-page.html">
+                    Sign Up
+                </a></div>
+           </div>
+        </form>
+        <div class="right-column">
+                <img src="images/login-photo.jpg" alt="Login">
+        </div>
+
     </div>
+</main>
+
 </body>
 </html>

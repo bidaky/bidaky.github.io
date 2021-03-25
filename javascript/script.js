@@ -40,7 +40,7 @@ submit.addEventListener('click', function () {
     current+=1;
     setTimeout(function (){
         alert("Success");
-        location.replace('index.html')
+        location.replace('profile.html')
     },800)
 });
 
