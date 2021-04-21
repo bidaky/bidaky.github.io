@@ -59,30 +59,30 @@
         </div>
     </div>
     <div class="registration-form">
-        <form action="#">
+        <form id="form" class="reg-form" action="#">
             <div class="registration-page slide-page">
                 <div class="registration-title">Basic Info: </div>
                 <div class="reg-field">
                     <div class="label">First Name</div>
-                    <input type="text">
+                    <input type="text" name="firstname">
                 </div>
                 <div class="reg-field">
                     <div class="label">Last Name</div>
-                    <input type="text">
+                    <input type="text" name="lastname">
                 </div>
-                <div class="reg-field nextButton">
-                    <button>Next</button>
+                <div class="reg-field">
+                    <button class="nextButton">Next</button>
                 </div>
             </div>
             <div class="registration-page">
                 <div class="registration-title">Contact Info: </div>
                 <div class="reg-field">
                     <div class="label">Email</div>
-                    <input type="text">
+                    <input type="email" name="email">
                 </div>
                 <div class="reg-field">
                     <div class="label">Phone number</div>
-                    <input type="number">
+                    <input type="number" name="phoneNumber">
                 </div>
                 <div class="reg-field buttons">
                     <button class="prev-1 prev">Previous</button>
@@ -93,11 +93,11 @@
                 <div class="registration-title">Password: </div>
                 <div class="reg-field">
                     <div class="label">Password</div>
-                    <input class="password" type="password">
+                    <input class="password" type="password" name="password" id="pass">
                 </div>
                 <div class="reg-field">
                     <div class="label">Confirm password</div>
-                    <input class="confirm-password" type="password">
+                    <input class="confirm-password" type="password" name="conf-password">
                 </div>
                 <div class="reg-field buttons">
                     <button class="prev-2 prev">Previous</button>
@@ -108,22 +108,22 @@
                 <div class="registration-title">User: </div>
                 <div class="reg-field">
                     <div class="label">Date of Birth</div>
-                    <input type="date">
+                    <input type="date" name="date">
                 </div>
                 <div class="reg-field">
                     <div class="label">Role</div>
                     <div class="form_radio_group">
                         <label for="Regular">Regular</label>
-                        <input  type="radio" id="Regular" name="user">
+                        <input  type="radio" id="Regular" name="user" value="Regular">
 
                         <label for="Admin">Admin</label>
-                        <input class="radio-button" type="radio" id="Admin" name="user">
+                        <input class="radio-button" type="radio" id="Admin" name="user" value="Admin">
 
                     </div>
                 </div>
                 <div class="reg-field buttons">
                     <button class="prev-3 prev">Previous</button>
-                    <button class="submit" onclick="document.href='profile.html'">Submit</button>
+                    <button class="submit">Submit</button>
                 </div>
             </div>
         </form>
@@ -131,5 +131,6 @@
 </div>
 <script src="javascript/script.js"></script>
 <script src="javascript/validator.js"></script>
+<script src="javascript/reg.js"></script>
 </body>
 </html>

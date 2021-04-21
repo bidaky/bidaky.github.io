@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="sass/pages/login.css">
     <link rel="stylesheet" href="sass/styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 </head>
 <body>
 <div class="header-nav">
@@ -29,15 +30,15 @@
 </div>
 <main>
     <div class="form-container">
-        <form class="left-column">
+        <form  id="signform" class="left-column">
             <p class="login-title">Welcome</p>
             <div class="wrap-input validate-input" data-validate = "Valid email is: a@b.c">
-                <input  class="input-form" id="email" required autocomplete="off" > <label for="email">Email</label>
+                <input  class="input-form" id="email" name="email" required autocomplete="off" value="bidaky@ukr.net" > <label for="email">Email</label>
             </div>
             <div class="wrap-input validate-input" data-validate="Enter password">
-                <input class="input-form" id="password" required autocomplete="off" type="password"  ><label for="password">Password</label>
+                <input class="input-form" id="password"  name="password" required autocomplete="off" type="password" value="12345678" ><label for="password">Password</label>
             </div>
-            <button class="floating-button" >
+            <button type="submit" class="floating-button sign-submit" >
                 Login
             </button>
 
@@ -57,6 +58,6 @@
 
     </div>
 </main>
-
+<script src="javascript/sign.js"></script>
 </body>
 </html>
