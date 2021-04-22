@@ -15,7 +15,7 @@ function retrieveFormValue(event){
         if(response.ok) {
             response.json().then(function(json) {
                 let data = json;
-                localStorage.setItem('user',  data.user)
+                localStorage.setItem('user',  JSON.stringify(data.user))
                 localStorage.setItem('token',data.basicAuthToken)
                 alert('Success')
                 document.location.replace('profile.html')
@@ -28,5 +28,4 @@ function retrieveFormValue(event){
 signform.addEventListener('submit', retrieveFormValue);
 // var userdata = localStorage.getItem('user')
 // var auth = localStorage.getItem('token')
-// var userdata2 = JSON.parse(userdata)
-// console.log(userdata2, auth)
+// console.log(JSON.parse(userdata), auth);

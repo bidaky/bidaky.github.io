@@ -36,37 +36,38 @@
 <div class="registration-container">
     <p class="sign">Edit Profile</p>
     <div class="registration-form">
-        <form action="#">
+        <form id="editform" action="#">
             <div class="reg-field">
                 <div class="label">First Name</div>
-                <input type="text" name="firstname">
+                <input type="text" name="firstname" id="firstname">
             </div>
             <div class="reg-field">
                 <div class="label">Last Name</div>
-                <input type="text"  name="lastname">
+                <input type="text"  name="lastname" id="lastname">
             </div>
             <div class="reg-field">
                 <div class="label">Phone number</div>
-                <input type="number" name="phoneNumber">
+                <input type="number" name="phoneNumber" id="phoneNumber">
             </div>
             <div class="reg-field">
                 <div class="label">New password</div>
-                <input class="password" type="password" name="password">
+                <input class="password" type="password" name="password" id="password">
             </div>
             <div class="reg-field">
                 <div class="label">Confirm password</div>
-                <input class="confirm-password" type="password" name="password">
+                <input class="confirm-password" type="password" name="conf-password">
             </div>
             <div class="reg-field">
                 <div class="label">Date of Birth</div>
                 <input type="date" name="birthDate">
             </div>
             <div class="reg-field  buttons">
-                <button class="submit">Submit</button>
+                <button class="next-2 submit">Submit</button>
             </div>
         </form>
     </div>
 </div>
-<script src="javascript/validator.js"></script>
+<!--<script src="javascript/validator.js"></script>-->
+<script src="javascript/editUser.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-document.querySelector('.next-2').onclick = function () {
+document.querySelector('.next-2' ).onclick = function () {
     var password = document.querySelector('.password').value,
         confirmPassword = document.querySelector('.confirm-password').value;
     if (password === ''){
@@ -8,8 +8,8 @@ document.querySelector('.next-2').onclick = function () {
         alert("Password didn`t match.");
         return false;
     }
-    pass = document.getElementById('pass')
-    if (pass.length < 8){
+    password = document.getElementById('pass')
+    if (password.length < 8){
 
         alert('Password should contain at least 8 symbols')
         document.getElementById('password').value = ''
