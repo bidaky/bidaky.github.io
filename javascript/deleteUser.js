@@ -21,3 +21,4 @@ function deleteUser(event){
     }})
 
 }
+delform.addEventListener('submit', deleteUser)
