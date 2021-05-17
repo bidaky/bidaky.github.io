@@ -1,1 +1,79 @@
-<p>request-money works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request-money</title>
+</head>
+<body>
+<div class="header-nav">
+    <nav >
+        <div class="logo">
+            ONLINE-WALLET
+        </div>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input class="display-none" type="checkbox" id="btn">
+        <ul>
+            <li><a href="payment-method.html">PAYMENT METHOD</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li>
+                <a href="send-money.html">SEND/REQUEST</a>
+            </li>
+            <li>
+                <a href="profile.html">PROFILE</a>
+            </li>
+            <li>
+                <a href="index.html">LOGOUT</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="bg-primary">
+    <div class="send-money-container">
+        <ul class="nav">
+            <li class="nav-item"> <a class="nav-link "  href="send-money.html">Send</a></li>
+            <li class="nav-item"> <a class="nav-link active"  href="request-money.html">Request</a></li>
+        </ul>
+    </div>
+    <h2 class="font-weight-400 text-center mt-3">Request Money</h2>
+    <p class="text-3 text-center lead">Request your payment on anytime, anywhere in the world.</p>
+    <div class="transaction-container">
+        <div class="form">
+            <form action="#">
+                <div class="registration-page slide-page">
+                    <div class="reg-field">
+                        <div class="label">Email:</div>
+                        <input type="text" class="placeholder" placeholder="Email Address">
+                    </div>
+                    <div class="reg-field">
+                        <div class="label">Amount:</div>
+                        <div class="input-group-prepend"> <span class="input-group-text">$</span> </div>
+                        <input type="text" value="1,000" placeholder="">
+                    </div>
+                    <hr class="mtm-20 mb-1">
+                    <p class="mb-1 text-left">Total fees <span class="text-3 float-right">7.21 USD</span></p>
+                    <hr>
+                    <p class="mb-1 text-left font-bold font-weight-500">Total To Receive <span class="text-3 float-right">1,000.00 USD</span></p>
+                    <input type="checkbox" id="click">
+                    <label for="click" class="click-button">Confirm</label>
+                    <div class="overlay">
+                        <div class="content">
+                            <div class="popup-header">
+                                <h2>SUCCESS</h2>
+                                <label for="click" class="fas fa-times"></label>
+                            </div>
+                            <label for="click" class="fas fa-check"></label>
+                            <p>Transactions Complete. You've Successfully receive $1000 </p>
+                            <div class="line"></div>
+                            <label for="click" class="close-btn text-4">Close</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

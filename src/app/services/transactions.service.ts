@@ -31,4 +31,27 @@ export class TransactionsService {
     return throwError("There is a problem with server");
 
   }
+
+  send(senddata){
+    return this.httpClient.post('http://127.0.0.1:5000/send', senddata).pipe(catchError(this.handleSendError))
+  }
+  private handleSendError(errorResponse : HttpErrorResponse){
+    if(errorResponse.status === 200 || errorResponse.status === 201 ){
+      alert("Successfull transaction")
+    }
+    else if (errorResponse.status === 405){
+      alert("Transaction was failed. There is a problem with server.Check data and try again")
+      console.error('Server side error : ', errorResponse);
+    }
+    else{
+      alert("Unknown problem.")
+    }
+    return throwError("There is a problem with server");
+
+  }
+  request(requestdata){
+    return this.httpClient.post('http://127.0.0.1:5000/request-money', requestdata).pipe(catchError(this.handleSendError))
+  }
+
 }
+
