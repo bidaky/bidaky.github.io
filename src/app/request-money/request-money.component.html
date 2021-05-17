@@ -40,31 +40,30 @@
     <p class="text-3 text-center lead">Request your payment on anytime, anywhere in the world.</p>
     <div class="transaction-container">
         <div class="form">
-            <form action="#">
+            <form  #requestForm = "ngForm">
                 <div class="registration-page slide-page">
                     <div class="reg-field">
                         <div class="label">Email:</div>
-                        <input type="text" class="placeholder" placeholder="Email Address">
+                        <input type="text" class="placeholder" placeholder="Email Address" name="email" [(ngModel)]='email'>
                     </div>
                     <div class="reg-field">
                         <div class="label">Amount:</div>
                         <div class="input-group-prepend"> <span class="input-group-text">$</span> </div>
-                        <input type="text" value="1,000" placeholder="">
+                        <input type="number"  placeholder="1000" name="money" [(ngModel)]='money' required autocomplete="off">
                     </div>
                     <hr class="mtm-20 mb-1">
-                    <p class="mb-1 text-left">Total fees <span class="text-3 float-right">7.21 USD</span></p>
+                    <p class="mb-1 text-left">Total fees <span class="text-3 float-right">{{fee}}</span></p>
                     <hr>
-                    <p class="mb-1 text-left font-bold font-weight-500">Total To Receive <span class="text-3 float-right">1,000.00 USD</span></p>
-                    <input type="checkbox" id="click">
-                    <label for="click" class="click-button">Confirm</label>
+                    <p class="mb-1 text-left font-bold font-weight-500">Total To Receive <span class="text-3 float-right">{{money + fee}} USD</span></p>
+                    <input type="checkbox" id="click" >
+                    <label for="click" class="click-button" (click)='requestMoney(requestForm.value)'>Confirm</label>
                     <div class="overlay">
                         <div class="content">
                             <div class="popup-header">
                                 <h2>SUCCESS</h2>
-                                <label for="click" class="fas fa-times"></label>
                             </div>
-                            <label for="click" class="fas fa-check"></label>
-                            <p>Transactions Complete. You've Successfully receive $1000 </p>
+                            <label for="click"><fa-icon [icon]="faCheck" class="fa-check"></fa-icon></label>
+                            <p>Transactions Complete. You've Successfully receive ${{money + fee}} </p>
                             <div class="line"></div>
                             <label for="click" class="close-btn text-4">Close</label>
                         </div>

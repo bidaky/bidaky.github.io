@@ -17,7 +17,6 @@ export class RegistrationComponent implements OnInit{
 
     addUser(data)
   {
-    console.log(data);
     this.registrationService.postUser(data).subscribe(datas =>{
       console.log(datas)
     }, (error)=>{
