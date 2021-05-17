@@ -13,6 +13,8 @@ import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AddCardComponent } from './add-card/add-card.component';
+import { SendMoneyComponent } from './send-money/send-money.component';
+import { RequestMoneyComponent } from './request-money/request-money.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { AddCardComponent } from './add-card/add-card.component';
     LoginComponent,
     EditProfileComponent,
     ProfileComponent,
-    AddCardComponent
+    AddCardComponent,
+    SendMoneyComponent,
+    RequestMoneyComponent
   ],
   imports: [
     BrowserModule,

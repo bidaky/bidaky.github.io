@@ -18,16 +18,6 @@ export class RegistrationComponent implements OnInit{
     addUser(data)
   {
     console.log(data);
-    // const newFormData = { 
-    //   firstname : data.firstname,
-    //   lastname : data.lastname,
-    //   email: data.email,
-    //   phoneNumber : data.phoneNumber,
-    //   password : data.password,
-    //   birthDate : data.birthDate,
-    //   role : data.role
-    // }
-    // console.log(newFormData)
     this.registrationService.postUser(data).subscribe(datas =>{
       console.log(datas)
     }, (error)=>{
