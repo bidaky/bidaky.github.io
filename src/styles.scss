@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@charset "utf-8";
+@import "../src/app/sass/fonts/fonts.css";
+@import "../src/app/sass/reset/reset";
+@import "../src/app/sass/layots/header";
+@import "../src/app/sass/utilities/_dir-utilities";
+@import "../src/app/sass/utilities/colors";
+html,body{
+    margin: 0;
+    padding: 0;
+}

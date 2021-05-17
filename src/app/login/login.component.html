@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<body class="j">
+<div class="header-nav">
+    <nav >
+        <div class="logo">
+            ONLINE-WALLET
+        </div>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input class="display-none" type="checkbox" id="btn">
+        <ul>
+            <li>
+            <a href="#">ABOUT</a>
+            </li>
+            <li><a href="registration-page.html">SIGN UP</a></li>
+
+        </ul>
+    </nav>
+</div>
+<main>
+    <div class="form-container">
+        <form  form  #loginForm = "ngForm" (ngSubmit)='getUser(loginForm.value)' class="left-column">
+            <p class="login-title">Welcome</p>
+            <div class="wrap-input validate-input">
+                <input  class="input-form" id="email" name="email" required autocomplete="off" ngModel> <label for="email">Email</label>
+            </div>
+            <div class="wrap-input validate-input" data-validate="Enter password">
+                <input class="input-form" id="password"  name="password" required autocomplete="off" type="password" ngModel><label for="password">Password</label>
+            </div>
+            <button type="submit" class="floating-button sign-submit" >
+                Login
+            </button>
+
+            <div class="container">
+                <a href="#">
+                    Forgot your password?
+                </a>
+                <div class="sign-up"> Don’t have an account?
+                <a href="registration-page.html">
+                    Sign Up
+                </a></div>
+           </div>
+        </form>
+        <div class="right-column">
+            <img src="../../assets/images/login-photo.jpg">
+        </div>
+
+    </div>
+</main>
+</body>
+</html>
