@@ -16,16 +16,16 @@
         </label>
         <input class="display-none" type="checkbox" id="btn">
         <ul>
-            <li><a href="payment-method.html">PAYMENT METHOD</a></li>
+            <li><a href="/profile">PAYMENT METHOD</a></li>
             <li><a href="#">ABOUT</a></li>
             <li>
-                <a href="send-money.html">SEND/REQUEST</a>
+                <a href="/send">SEND/REQUEST</a>
             </li>
             <li>
-                <a href="profile.html">PROFILE</a>
+                <a href="/profile">PROFILE</a>
             </li>
             <li>
-                <a href="index.html">LOGOUT</a>
+                <a href="/login" (click)="logout()">LOGOUT</a>
             </li>
         </ul>
     </nav>
@@ -36,7 +36,7 @@
         <div class="card_row">
             <div class="card_col">
                 <label for="cardNumber" class="card_label">Card Number</label>
-                <input type="text" class="card_input card_input-large" id="cardNumber" name = "cardNumber" placeholder="xxxx-xxxx-xxxx-xxxx" ngModel/>
+                <input type="text" class="card_input card_input-large" id="cardNumber" name = "cardNumber" placeholder="xxxx-xxxx-xxxx-xxxx" ngModel required/>
             </div>
             <div class="card_col card_chip">
                 <img src="../../assets/images/chip.svg" alt="chip" />
@@ -45,11 +45,11 @@
         <div class="card_row">
             <div class="card_col">
                 <label for="cardExpiry" class="card_label">Expiry Date</label>
-                <input type="text"  class="card_input" id="cardExpiry" name="expiryDate" placeholder="xx/xx" ngModel />
+                <input type="text"  class="card_input" id="cardExpiry" name="expiryDate" placeholder="xx/xx" ngModel required />
             </div>
             <div class="card_col">
-                <label for="cardCcv" class="card_label">CVV</label>
-                <input type="text" class="card_input" id="cardcvv" name="cvv" placeholder="xxx" ngModel />
+                <label for="cardcvv" class="card_label">CVV</label>
+                <input type="text" class="card_input" id="cardcvv" name="cvv" placeholder="xxx" ngModel required/>
             </div>
             <div class="card_col card_brand"><i id="cardBrand"></i></div>
             <button class="card-btn" type="submit">Okay</button>

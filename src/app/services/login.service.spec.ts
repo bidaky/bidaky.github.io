@@ -1,16 +1,26 @@
-import { TestBed } from '@angular/core/testing';
+import {TestBed} from '@angular/core/testing';
+import {HttpClientModule} from '@angular/common/http';
 
-import { LoginService } from './login.service';
+import {LoginService} from './login.service';
 
 describe('LoginService', () => {
   let service: LoginService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+      imports: [HttpClientModule],
+      providers: [LoginService]
+
+    });
     service = TestBed.inject(LoginService);
+
   });
 
+  service = TestBed.inject(LoginService);
   it('should be created', () => {
-    expect(service).toBeTruthy();
+    expect(service).toBeDefined();
+  });
+  it('повинен повертати json юзера',()=>{
+    // const result = service.getUser()
   });
 });

@@ -1,82 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
 </head>
 <body>
 <div class="header-nav">
-    <nav >
-        <div class="logo">
-            ONLINE-WALLET
-        </div>
-        <label for="btn" class="icon">
-            <span class="fa fa-bars"></span>
-        </label>
-        <input class="display-none" type="checkbox" id="btn">
-        <ul>
-            <li><a href="payment-method.html">PAYMENT METHOD</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li>
-                <a href="send-money.html">SEND/REQUEST</a>
-            </li>
-            <li>
-                <a href="profile.html">PROFILE</a>
-            </li>
-            <li>
-                <a href="index.html">LOGOUT</a>
-            </li>
-        </ul>
-    </nav>
+  <nav>
+    <div class="logo">
+      ONLINE-WALLET
+    </div>
+    <label for="btn" class="icon">
+      <span class="fa fa-bars"></span>
+    </label>
+    <input class="display-none" type="checkbox" id="btn">
+    <ul>
+      <li><a href="/payment-method">PAYMENT METHOD</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li>
+        <a href="/send">SEND/REQUEST</a>
+      </li>
+      <li>
+        <a href="/profile">PROFILE</a>
+      </li>
+    </ul>
+  </nav>
 </div>
 <div class="registration-container">
-    <p class="sign">Registration</p>
-    <div class="registration-form">
-        <form  #userForm = "ngForm" (ngSubmit)='addUser(userForm.value)'>
-            <div class="reg-field">
-                <div class="label">First Name</div>
-                <input type="text" name="firstname"   ngModel>
-            </div>
-            <div class="reg-field">
-                <div class="label">Last Name</div>
-                <input type="text"  name="lastname" ngModel>
-            </div>
-            <div class="reg-field">
-                <div class="label">Email</div>
-                <input type="text" name="email" id="email" ngModel>
-            </div>
-            <div class="reg-field">
-                <div class="label">Phone number</div>
-                <input type="text" name="phoneNumber" id="phoneNumber" ngModel>
-            </div>
-            <div class="reg-field">
-                <div class="label">Password</div>
-                <input class="password" type="password" name="password" id="password" ngModel>
-            </div>
-            <div class="reg-field">
-                <div class="label">Confirm password</div>
-                <input class="confirm-password" type="password" name="conf-password">
-            </div>
-            <div class="reg-field">
-                <div class="label">Date of Birth</div>
-                <input type="date" name="birthDate" ngModel>
-            </div>
-            <div class="reg-field">
-                <div class="label">Role</div>
-                <div class="form_radio_group">
-                    <label for="Regular" class="rad-b">Regular</label>
-                    <input  class="radio-button" type="radio" id="Regular" name="role" value="Regular" ngModel>
+  <p class="sign">Registration</p>
+  <div class="registration-form">
+    <form [formGroup]="regForm" (ngSubmit)='addUser()'>
+      <div class="reg-field">
+        <div class="label">First Name</div>
+        <input type="text" name="firstname" formControlName="firstname">
+        <div *ngIf="f.firstname.touched && f.firstname.errors" class="danger-data">
+          <div *ngIf="f.firstname.errors.required">Firstname is required</div>
+          <div *ngIf="f.firstname.errors.minlength">Minimum length is 3</div>
+          <div *ngIf="f.firstname.errors.maxlength">Maximum length is 20</div>
+        </div>
+      </div>
 
-                    <label for="Admin" class="rad-b">Admin</label>
-                    <input class="radio-button" type="radio" id="Admin" name="role" value="Admin" ngModel>
+      <div class="reg-field">
+        <div class="label">Last Name</div>
+        <input type="text" name="lastname" formControlName="lastname">
+        <div *ngIf="f.lastname.touched && f.lastname.errors" class="danger-data">
+          <div *ngIf="f.lastname.errors.required">Lastname is required</div>
+          <div *ngIf="f.lastname.errors.minlength">Minimum length is 3</div>
+          <div *ngIf="f.lastname.errors.maxlength">Maximum length is 20</div>
+        </div>
+      </div>
+      <div class="reg-field">
+        <div class="label">Email</div>
+        <input type="text" name="email" id="email" formControlName="email">
+        <div *ngIf="f.email.touched && f.email.errors" class="danger-data">
+          <div *ngIf="f.email.errors.required">Email is required</div>
+          <div *ngIf="f.email.errors.pattern">Invalid email</div>
+          <div *ngIf="f.email.errors.minlength">Minimum length is 8</div>
+          <div *ngIf="f.email.errors.maxlength">Maximum length is 20</div>
+        </div>
+      </div>
+      <div class="reg-field">
+        <div class="label">Phone number</div>
+        <input type="text" name="phoneNumber" id="phoneNumber" formControlName="phoneNumber">
+        <div *ngIf="f.phoneNumber.touched && f.phoneNumber.errors" class="danger-data">
+          <div *ngIf="f.phoneNumber.errors.required">Phone number is required</div>
+        </div>
+      </div>
+      <div class="reg-field">
+        <div class="label">Password</div>
+        <input class="password" type="password" name="password" id="password" formControlName="password">
+        <div *ngIf="f.password.touched && f.password.errors" class="danger-data">
+          <div *ngIf="f.password.errors.required">Password is required</div>
+          <div *ngIf="f.password.errors.minlength">Minimum length is 8</div>
+          <div *ngIf="f.password.errors.maxlength">Maximum length is 20</div>
+        </div>
+      </div>
+      <div class="reg-field">
+        <div class="label">Confirm password</div>
+        <input class="confirm-password" type="password" name="confPassword" formControlName="confPassword">
+        <div *ngIf="f.confPassword.touched && regForm.hasError('noMatch')" class="danger-data">Passwords do not match</div>
+      </div>
+      <div class="reg-field">
+        <div class="label">Date of Birth</div>
+        <input type="date" name="birthDate" formControlName="birthDate">
+      </div>
+      <div class="reg-field">
+        <div class="label">Role</div>
+        <div class="form_radio_group">
+          <label for="Regular" class="rad-b">Regular</label>
+          <input class="radio-button" [checked]="true" (change)="changeRole($event)" type="radio" id="Regular"
+                 name="role" value="Regular">
 
-            </div>
-            </div>
-            <div class="reg-field  buttons">
-                <button  type="submit" class="next-2 submit" >Submit</button>
-            </div>
-        </form>
-    </div>
+          <label for="Admin" class="rad-b">Admin</label>
+          <input (change)="changeRole($event)" class="radio-button" type="radio" id="Admin" name="role" value="Admin">
+
+        </div>
+      </div>
+      <div class="reg-field  buttons">
+        <button type="submit" class="next-2 submit">Submit</button>
+      </div>
+    </form>
+  </div>
 </div>
 </body>
 </html>

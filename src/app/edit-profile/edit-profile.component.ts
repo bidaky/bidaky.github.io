@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserOperationService } from '../services/user-operation.service'
+import {faBars} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-edit-profile',
@@ -7,6 +8,7 @@ import { UserOperationService } from '../services/user-operation.service'
   styleUrls: ['./edit-profile.component.scss']
 })
 export class EditProfileComponent implements OnInit {
+     faBars = faBars
      error : string
      userData = JSON.parse(localStorage.getItem('user'))
      firstname = this.userData.firstname
@@ -15,7 +17,9 @@ export class EditProfileComponent implements OnInit {
      email = this.userData.email
 
   constructor(private userService : UserOperationService) { }
-  
+  public logout(){
+    localStorage.clear();
+  }
   editUser(editData){
     console.log(editData.password)
     this.userService.updateUser(editData, this.email).subscribe(data =>{
@@ -27,7 +31,7 @@ export class EditProfileComponent implements OnInit {
       this.error = error
     }, )
   }
-  
+
 
 
 

@@ -15,16 +15,16 @@
         </label>
         <input class="display-none" type="checkbox" id="btn">
         <ul>
-            <li><a href="payment-method.html">PAYMENT METHOD</a></li>
+            <li><a href="/payment-method">PAYMENT METHOD</a></li>
             <li><a href="#">ABOUT</a></li>
             <li>
-                <a href="send-money.html">SEND/REQUEST</a>
+                <a href="/send">SEND/REQUEST</a>
             </li>
             <li>
-                <a href="profile.html">PROFILE</a>
+                <a href="/profile">PROFILE</a>
             </li>
             <li>
-                <a href="index.html">LOGOUT</a>
+                <a href="/login" (click)="logout()">LOGOUT</a>
             </li>
         </ul>
     </nav>
@@ -33,7 +33,7 @@
     <div class="send-money-container">
         <ul class="nav">
             <li class="nav-item"> <a class="nav-link active"  href="send-money.html">Send</a></li>
-            <li class="nav-item"> <a class="nav-link"  href="request-money.html">Request</a></li>
+            <li class="nav-item"> <a class="nav-link"  href="/request">Request</a></li>
         </ul>
     </div>
     <h2 class="font-weight-400 text-center mt-3">Send Money</h2>
@@ -44,12 +44,12 @@
             <div class="registration-page slide-page">
                 <div class="reg-field">
                     <div class="label">Recipient:</div>
-                    <input type="email" class="placeholder" placeholder="Email Address" name="email" [(ngModel)]='email'>
+                    <input type="email" class="placeholder, send" placeholder="Email Address" name="email" [(ngModel)]='email' required>
                 </div>
                 <div class="reg-field">
                     <div class="label">You send:</div>
                     <div class="input-group-prepend"> <span class="input-group-text">$</span> </div>
-                         <input type="number"  placeholder="" name="money" [(ngModel)]='money' required autocomplete="off">
+                         <input  class="send" type="number" required autocomplete="off" placeholder="" name="money" [(ngModel)]='money' required >
                 </div>
                 <hr class="mtm-20 mb-1">
                 <p class="mb-1 text-left">Total fees <span class="text-3 float-right">{{fee}} USD</span></p>
@@ -61,10 +61,10 @@
                     <div class="content">
                         <div class="popup-header">
                             <h2>SUCCESS</h2>
-            
+
                         </div>
                         <label for="click" ><fa-icon [icon]="faCheck" class="fa-check"></fa-icon></label>
-                        <p>Transactions Complete. You've Successfully sent ${{money + fee}} to demo@gmail.com</p>
+                        <p>Transactions Complete. You've Successfully sent ${{money}} to demo@gmail.com</p>
                         <div class="line"></div>
                         <label for="click" class="close-btn text-4">Close</label>
                     </div>

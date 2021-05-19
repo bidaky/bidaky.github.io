@@ -3,7 +3,6 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit-profile</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 </head>
 <body>
@@ -13,20 +12,20 @@
             ONLINE-WALLET
         </div>
         <label for="btn" class="icon">
-            <span class="fa fa-bars"></span>
+          <fa-icon [icon]="faBars"></fa-icon>
         </label>
         <input class="display-none" type="checkbox" id="btn">
         <ul>
-            <li><a href="payment-method.html">PAYMENT METHOD</a></li>
+            <li><a href="/payment-method">PAYMENT METHOD</a></li>
             <li><a href="#">ABOUT</a></li>
             <li>
-                <a href="send-money.html">SEND/REQUEST</a>
+                <a href="/send">SEND/REQUEST</a>
             </li>
             <li>
-                <a href="profile.html">PROFILE</a>
+                <a href="/profile">PROFILE</a>
             </li>
             <li>
-                <a href="index.html">LOGOUT</a>
+                <a href="/login" (click)="logout()">LOGOUT</a>
             </li>
         </ul>
     </nav>
@@ -35,14 +34,14 @@
     <p class="sign">Edit Profile</p>
     <div class="registration-form">
         <form id="editform" #editForm = "ngForm"(ngSubmit)='editUser(editForm.value)'>
-            
+
             <div class="reg-field">
                 <div class="label">First Name</div>
                 <input type="text" name="firstname" id="firstname" [ngModel]="firstname">
             </div>
             <div class="reg-field">
                 <div class="label">Last Name</div>
-                <input type="text"  name="lastname" id="lastname"[ngModel]="lastname">
+                <input type="text"  name="lastname" id="lastname"[ngModel]="lastname" >
             </div>
             <div class="reg-field">
                 <div class="label">Phone number</div>

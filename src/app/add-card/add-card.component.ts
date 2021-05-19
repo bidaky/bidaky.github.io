@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { TransactionsService } from '../services/transactions.service';
+import {Component, OnInit} from '@angular/core';
+import {faBars} from '@fortawesome/free-solid-svg-icons';
+import {TransactionsService} from '../services/transactions.service';
 
 @Component({
   selector: 'app-add-card',
@@ -10,21 +10,26 @@ import { TransactionsService } from '../services/transactions.service';
 export class AddCardComponent implements OnInit {
 
   faBars = faBars;
-  
-  constructor(private transactions : TransactionsService) { }
 
-  error : string;
+  public logout() {
+    localStorage.clear();
+  }
+
+  constructor(private transactions: TransactionsService) {
+  }
+
+  error: string;
 
   ngOnInit(): void {
   }
-  addCard(data)
-  {
-    this.transactions.postCard(data).subscribe(datas =>{
-      console.log(datas)
-    }, (error)=>{
-      console.log(error)
-      this.error = error
-    })
+
+  addCard(data) {
+    this.transactions.postCard(data).subscribe(datas => {
+      console.log(datas);
+    }, (error) => {
+      console.log(error);
+      this.error = error;
+    });
   }
 
 }

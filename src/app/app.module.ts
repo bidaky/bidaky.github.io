@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule} from '@angular/forms'
+import { FormBuilder, FormsModule, ReactiveFormsModule} from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { RegistrationComponent } from './registration/registration.component';
@@ -15,6 +15,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AddCardComponent } from './add-card/add-card.component';
 import { SendMoneyComponent } from './send-money/send-money.component';
 import { RequestMoneyComponent } from './request-money/request-money.component';
+import { PaymentMethodComponent } from './payment-method/payment-method.component';
 
 @NgModule({
   declarations: [
@@ -25,14 +26,17 @@ import { RequestMoneyComponent } from './request-money/request-money.component';
     ProfileComponent,
     AddCardComponent,
     SendMoneyComponent,
-    RequestMoneyComponent
+    RequestMoneyComponent,
+    PaymentMethodComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     RegistrationService,

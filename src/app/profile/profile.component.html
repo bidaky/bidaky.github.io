@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
 </head>
-<body>
+<body class="background">
 
 <div class="header-nav">
     <nav >
@@ -16,16 +16,13 @@
         </label>
         <input class="display-none" type="checkbox" id="btn">
         <ul>
-            <li><a href="payment-method.html">PAYMENT METHOD</a></li>
+            <li><a href="/payment-method">PAYMENT METHOD</a></li>
             <li><a href="#">ABOUT</a></li>
             <li>
-                <a href="send-money.html">SEND/REQUEST</a>
+                <a href="/send">SEND/REQUEST</a>
             </li>
             <li>
-                <a href="profile.html">PROFILE</a>
-            </li>
-            <li>
-                <a href="index.html">LOGOUT</a>
+                <a href="/login" (click)='logout()'>LOGOUT</a>
             </li>
         </ul>
     </nav>
@@ -39,9 +36,9 @@
                  </div>
             </div>
              <p class="profile-text text-4">Hello, {{firstname}} {{lastname}}</p>
-             <p class="profile-edit-box"><a href="edit-profile.html" onclick="onEdit(this)"  class="profile-edit" data-toggle="tooltip" id="edit-user" title="Edit Profile"><fa-icon [icon]="faEdit" class="fa-lg"></fa-icon></a></p>
+             <p class="profile-edit-box"><a href="/edit-profile" onclick="onEdit(this)"  class="profile-edit" data-toggle="tooltip" id="edit-user" title="Edit Profile"><fa-icon [icon]="faEdit" class="fa-lg"></fa-icon></a></p>
              <input type="checkbox" id="click">
-             <label class="delete-button" (click)='deleteUser()'>Delete user</label>
+             <label class="delete-button" (click)='deleteUser()' >Delete user</label>
              <!-- <div class="overlay">
              <div class="content" >
                 <i class="fas fa-exclamation"></i>
@@ -55,12 +52,12 @@
                  </div>
                  </form>
              </div>
-             </div> --> 
+             </div> -->
          </div>
      </div>
      <div class="profile-right-column">
          <div class="personal-info">
-             <h3 class="personal-detail">Personal Details <a href="edit-profile.html" onclick="onEdit(this)" data-toggle="modal" class="edit-button float-right text-1 text-uppercase text-muted btn-link"><fa-icon [icon]="faEdit" class="mr-1"></fa-icon>Edit</a></h3>
+             <h3 class="personal-detail">Personal Details <a href="/edit-profile" onclick="onEdit(this)" data-toggle="modal" class="edit-button float-right text-1 text-uppercase text-muted btn-link"><fa-icon [icon]="faEdit" class="mr-1"></fa-icon>Edit</a></h3>
              <hr class="profile-line">
              <div class="form-row text-3">
                  <p class="text-3 text-muted profile-column  ">Name:</p>

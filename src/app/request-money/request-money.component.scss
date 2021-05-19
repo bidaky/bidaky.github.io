@@ -1,81 +1,81 @@
 .font-weight-400 {
     font-weight: 400;
   }
-  
+
   .font-weight-500 {
     font-weight: 500;
   }
-  
+
   .font-bold {
     font-weight: bold;
   }
-  
+
   .text-center {
     text-align: center;
   }
-  
+
   .text-3 {
     font-size: 16px;
   }
-  
+
   .text-4 {
     font-size: 18px;
   }
-  
+
   .mt-3 {
     margin-top: 30px;
   }
-  
+
   .text-muted {
     color: #8e9a9d;
   }
-  
+
   .text-black-light {
     color: #2f2c2c;
   }
-  
+
   .mb-1 {
     margin-bottom: 10px;
   }
-  
+
   .float-right {
     float: right;
   }
-  
+
   .text-right {
     text-align: right;
   }
-  
+
   .text-left {
     text-align: left;
   }
-  
+
   .mtm-10 {
     margin-top: -10px;
   }
-  
+
   .mtm-20 {
     margin-top: -20px;
   }
-  
+
   * {
     text-align: center;
   }
-  
+
   body {
     display: grid;
     background-color: #e3e9ff;
     font-family: Poppins-Medium, sans-serif;
     letter-spacing: 1px;
   }
-  
+
   .send-money-container {
     background-color: #7a7b71;
     justify-content: center;
     display: flex;
     padding-top: 70px;
   }
-  
+
   .nav {
     display: flex;
     flex-wrap: wrap;
@@ -83,11 +83,11 @@
     list-style: none;
     height: 55px;
   }
-  
+
   .nav-link {
     display: block;
   }
-  
+
   .nav a {
     text-decoration: none;
     background-color: transparent;
@@ -97,23 +97,23 @@
     font-weight: 700;
     letter-spacing: 2px;
   }
-  
+
   .nav-item .active {
     background-color: #686961;
   }
-  
+
   .lead {
     font-weight: 100;
     color: #2f2c2c;
   }
-  
+
   .content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
+
   .transaction-container {
     width: 380px;
     height: 345px;
@@ -122,20 +122,20 @@
     padding: 20px 35px 0px 35px;
     margin: 24px auto 19px auto;
   }
-  
+
   .reg-field {
     height: 40px;
     margin: 38px 0;
     position: relative;
     display: flex;
   }
-  
+
   .reg-field .label {
     position: absolute;
     top: -30px;
     font-weight: 500;
   }
-  
+
   .reg-field input {
     height: 100%;
     width: 100%;
@@ -145,11 +145,11 @@
     padding-left: 15px;
     text-align: left;
   }
-  
+
   .input-group-prepend {
     display: flex;
   }
-  
+
   .input-group-text {
     display: flex;
     align-items: center;
@@ -164,7 +164,7 @@
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
   }
-  
+
   .click-button {
     font-size: 18px;
     margin: 20px auto 5px auto;
@@ -179,11 +179,11 @@
     cursor: pointer;
     border-radius: 4px;
   }
-  
+
   #click {
     display: none;
   }
-  
+
   .overlay {
     opacity: 0;
     visibility: hidden;
@@ -195,7 +195,7 @@
     left: 0;
     transition: 0.1s ease-in-out;
   }
-  
+
   .content {
     width: 400px;
     height: 350px;
@@ -204,12 +204,12 @@
     transition: 0.3s ease-in;
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.4);
   }
-  
+
   #click:checked ~ .overlay {
     opacity: 1;
     visibility: visible;
   }
-  
+
   .popup-header {
     height: 68px;
     background-color: #5cbe6f;
@@ -217,13 +217,13 @@
     border-radius: 3px 3px 0 0;
     box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
   }
-  
+
   .popup-header h2 {
     color: #ffffff;
     padding-top: 16px;
     font-weight: normal;
   }
-  
+
   .fa-times {
     position: absolute;
     right: 20px;
@@ -233,7 +233,7 @@
     font-weight: bold;
     cursor: pointer;
   }
-  
+
   .fa-check {
     font-size: 50px;
     color: #5cbe6f;
@@ -247,14 +247,14 @@
     box-sizing: border-box;
     margin-top: 19px;
   }
-  
+
   .content p {
     padding-top: 10px;
     font-size: 19px;
     font-weight: 100;
     text-align: center;
   }
-  
+
   .line {
     position: absolute;
     bottom: 60px;
@@ -262,7 +262,7 @@
     height: 1px;
     background: lightgray;
   }
-  
+
   .close-btn {
     position: absolute;
     bottom: 6px;
@@ -273,12 +273,12 @@
     cursor: pointer;
     transition: 0.5s;
   }
-  
+
   .close-btn:hover {
     background: #5cbe6f;
     color: #ffffff;
   }
-  
+
   .button-wrap {
     margin-bottom: 20px;
   }
@@ -294,3 +294,6 @@
     box-sizing: border-box;
     margin-top: 19px;
   }
+.request.ng-touched.ng-invalid{
+  border-bottom:  solid 0.2rem #cc4f4f;
+}
