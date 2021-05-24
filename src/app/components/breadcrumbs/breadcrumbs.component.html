@@ -1,0 +1,11 @@
+<nav id="breadcrumbs">
+  <ul>
+    <li><i class="fa fa-home"></i></li>
+    <li><a [routerLink]="['/']">Home</a></li>
+    <li *ngIf="crumbs[0].title">
+      <span>&gt;</span>
+      <a *ngIf="crumbs[0].route" [routerLink]="['/' + crumbs[0].route]">{{crumbs[0].title}}</a>
+      <span *ngIf="!crumbs[0].route">{{crumbs[0].title}}</span>
+    </li>
+  </ul>
+</nav>

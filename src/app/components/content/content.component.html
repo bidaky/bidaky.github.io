@@ -1,0 +1,12 @@
+<div id="content">
+  <section>
+    <span *ngIf="showLoading">
+      <i class="fa fa-circle-o-notch fa-spin"></i>
+    </span>
+
+    <div *ngIf="!showLoading">
+      <div #contentBody></div>
+    </div>
+
+  </section>
+</div>
