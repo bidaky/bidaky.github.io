@@ -1,0 +1,136 @@
+@import "../utilities/colors";
+* {
+  margin: auto;
+}
+
+body {
+  //box-sizing: border-box;
+  text-align: center;
+  font-family: Poppins-Medium, sans-serif;
+  letter-spacing: 1px;
+  background: $background-color;
+}
+
+.profile-container {
+  position: absolute;
+  height: 365px;
+  width: 90%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  top: 51%;
+  transform: translate(0, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.profile-left-column {
+  height: 292px;
+  background-color: $white;
+  float: left;
+  width: 30%;
+  text-align: center;
+  margin: 32px;
+}
+.pay-left{
+  padding-top: 15%
+}
+.fa-wallet{
+  color: $text-muted;
+}
+.profile-right-column {
+  float: right;
+  width: 75%;
+  height: 292px;
+  background: $white;
+  @media  (max-width: 992px){
+    width: 60%;
+  }
+}
+.personal-detail {
+  font-weight: 400;
+}
+
+.personal-info {
+  padding: 25px;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+.profile-line {
+  margin: 1.5rem -1.5rem 1rem -1.5rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.row{
+    //display: flex;
+    //flex-wrap: wrap;
+    //margin-right: 39px;
+    //margin-left: 39px;
+    //margin-top: -31px;
+}
+.card{
+  width: 285px;
+  height:162px;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: -40px 0 0px 62px;
+}
+.name{
+  text-transform: uppercase;
+  float: left;
+  padding-left: 20px;
+  margin-top: 19px;
+}
+.number-card{
+  padding: 23px 16px 1px 16px;
+}
+.valid-card{
+  font-size: 13px;
+  color: #7a7b71;
+  margin-top: 10px;
+}
+@media (max-width: 768px) {
+  .profile-container{
+    display: block;
+    height: auto;
+    top: 55%;
+  }
+  .profile-left-column{
+    height: 210px;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 9%;
+    margin: 0 auto 26px auto;
+  }
+  .profile-right-column{
+    width: 100%;
+  }
+  .card{
+    width: 210px;
+    height: 122px;
+    margin: auto;
+  }
+  .font-weight-500{
+    font-weight: 300;
+    font-size: 12px;
+  }
+  .name{
+    margin-top: 6px;
+  }
+  .text-4{
+    font-size: 10px
+  }
+  .personal-info{
+    margin-bottom: 0;
+  }
+  .pay-left{
+    padding-top: 11%;
+  }
+  .header-nav{
+    text-align: left;
+  }
+}

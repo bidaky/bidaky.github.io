@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit-profile</title>
+    <link rel="stylesheet" href="sass/styles.css">
+    <link rel="stylesheet" href="sass/pages/edit-profile.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+<body>
+<div class="header-nav">
+    <nav >
+        <div class="logo">
+            ONLINE-WALLET
+        </div>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input class="display-none" type="checkbox" id="btn">
+        <ul>
+            <li><a href="payment-method.html">PAYMENT METHOD</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li>
+                <a href="send-money.html">SEND/REQUEST</a>
+            </li>
+            <li>
+                <a href="profile.html">PROFILE</a>
+            </li>
+            <li>
+                <a href="index.html">LOGOUT</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+<div class="registration-container">
+    <p class="sign">Edit Profile</p>
+    <div class="registration-form">
+        <form action="#">
+            <div class="reg-field">
+                <div class="label">First Name</div>
+                <input type="text" name="firstname">
+            </div>
+            <div class="reg-field">
+                <div class="label">Last Name</div>
+                <input type="text"  name="lastname">
+            </div>
+            <div class="reg-field">
+                <div class="label">Phone number</div>
+                <input type="number" name="phoneNumber">
+            </div>
+            <div class="reg-field">
+                <div class="label">New password</div>
+                <input class="password" type="password" name="password">
+            </div>
+            <div class="reg-field">
+                <div class="label">Confirm password</div>
+                <input class="confirm-password" type="password" name="password">
+            </div>
+            <div class="reg-field">
+                <div class="label">Date of Birth</div>
+                <input type="date" name="birthDate">
+            </div>
+            <div class="reg-field  buttons">
+                <button class="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="javascript/validator.js"></script>
+</body>
+</html>

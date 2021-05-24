@@ -1,0 +1,90 @@
+//.ml-1 {
+//  margin-left: 10px;
+//}
+@import "../utilities/colors";
+body {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins-Medium", sans-serif;
+  background-color: $background-color;
+  //background: url("../../images/background.png"), -webkit-linear-gradient(bottom, #4eb78b, #fff);
+}
+
+.registration-container {
+  width: 342px;
+  background: $white;
+  border-radius: 5px;
+  padding: 30px 35px 0 35px;
+  margin: 119px auto 19px auto;
+}
+
+.sign {
+  font-size: 29px;
+  font-weight: 600;
+}
+
+.registration-form {
+  width: 100%;
+}
+
+.reg-field {
+  height: 40px;
+  width: 330px;
+  margin: 38px 0;
+  position: relative;
+}
+
+.reg-field .label {
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+
+.reg-field input {
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  font-size: 14px;
+  padding-left: 15px;
+}
+
+.reg-field button {
+  width: 100%;
+  height: calc(100% + 5px);
+  margin-top: -10px;
+  border: none;
+  border-radius: 5px;
+  background: $light-orange;
+  color: $white;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.reg-field button:hover {
+  background: $black
+}
+
+.submit {
+  margin-left: 10px;
+}
+@media (max-width: 992px) {
+  .header-nav nav .logo{
+    margin: 0;
+    text-align: left;
+  }
+  .registration-container{
+    width: 360px;
+    margin: 100px auto 30px auto;
+    padding: 30px 25px 0 35px;
+  }
+  .reg-field input{
+    width: 91%;
+  }
+}
+/*# sourceMappingURL=edit-profile.css.map */

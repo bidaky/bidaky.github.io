@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+.display-none{
+  display: none;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.header-nav {
+  top:0;
+  width: 100%;
+  position: fixed;
+  z-index: 12;
+  background: #4eb78b;
+  font-family: 'Teko', sans-serif;
+  letter-spacing:2px ;
+}
+.header-nav nav:after{
+  content: '';
+  clear: both;
+  display: table;
+}
+.header-nav nav .logo{
+  float: left;
+  color: white;
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 70px;
+  margin-left: 60px;
+  letter-spacing: 4px;
+}
+.header-nav nav ul{
+  float: right;
+  margin-right: 40px;
+  list-style: none;
+  position: relative;
+}
+.header-nav nav ul li{
+  float: left;
+  display: inline-block;
+  background: #4eb78b;
+  margin: 0 5px;
+}
+.header-nav nav ul li a{
+  color: white;
+  line-height: 70px;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 8px 15px;
+  letter-spacing: 4px;
+}
+.header-nav nav ul li a:hover{
+  border-radius: 5px;
+  box-shadow: 0 0 10px #409873;
+}
+.icon{
+  display: none;
+}
+.fa-plus{
+  font-size: 15px;
+  margin-left: 40px;
+}
+@media all and (max-width: 968px) {
+  .header-nav nav .logo{
+    margin: 0;
+  }
+  .header-nav nav ul{
+    margin-right: 0px;
+    float: left;
+  }
+  .header-nav nav .logo{
+    padding-left: 30px;
+    width: 100%;
+  }
+  .show + a, ul{
+    display: none;
+  }
+  .header-nav nav ul li,nav ul ul li{
+    display: block;
+    width: 100%;
+  }
+  .header-nav nav ul li a:hover{
+    box-shadow: none;
+  }
+  .show{
+    display: block;
+    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    line-height: 70px;
+    cursor: pointer;
+  }
+  .show:hover{
+    color: cyan;
+  }
+  .icon{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    line-height: 70px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  .header-nav nav ul ul{
+    top: 70px;
+    border-top: 0;
+    float: none;
+    position: static;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+  }
+  [id^=btn]:checked + ul{
+    display: block;
+  }
+}
+header{
+  font-size: 35px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
